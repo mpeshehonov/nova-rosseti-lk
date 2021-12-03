@@ -12,9 +12,24 @@
     "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\""
   },
   "dependencies": {
+    "@headlessui/react": "^1.4.2",
+    "@heroicons/react": "^1.0.5",
+    "@tailwindcss/forms": "^0.3.4",
+    "@tailwindcss/typography": "^0.4.1",
+    "@types/react-router-dom": "^5.1.8",
+    "ahooks": "^2.10.14",
+    "clsx": "^1.1.1",
+    "daisyui": "^1.16.2",
+    "firebase": "^9.6.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "tailwind": "^4.0.0"
+    "react-iframe": "^1.8.0",
+    "react-router-dom": "^5.2.0",
+    "reactour": "^1.18.6",
+    "snowpack-plugin-svgr": "^0.1.2",
+    "styled-components": "^4.0.0",
+    "tailwind": "^4.0.0",
+    "theme-change": "^2.0.2"
   },
   "devDependencies": {
     "@snowpack/plugin-dotenv": "^2.0.5",
