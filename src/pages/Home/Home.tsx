@@ -30,6 +30,7 @@ const Home = () => {
   return (
     <div className="mx-6 md:mx-0">
       <Tour
+        className="text-black"
         steps={steps}
         isOpen={isTourOpen}
         onRequestClose={() => closeTour()}

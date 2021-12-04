@@ -14,7 +14,7 @@ const Layout = ({
     <div className="flex flex-col w-full min-h-screen">
       <Header />
 
-      <div className={clsx('w-full max-w-7xl pb-24 m-auto mt-12', className)}>
+      <div className={clsx('w-full px-24 m-auto mt-6', className)}>
         <div className="">{children}</div>
       </div>
 
