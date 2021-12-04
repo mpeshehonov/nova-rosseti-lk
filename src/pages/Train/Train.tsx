@@ -11,7 +11,7 @@ const Train = () => {
       <div className="mt-4">
         <Iframe
           className="border-none"
-          url="https://digital.protsenko.dev/"
+          url="https://digital.protsenko.dev/train/index.html"
           width="100%"
           height="900px"
           display="block"
