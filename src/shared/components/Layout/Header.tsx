@@ -7,10 +7,12 @@ import {
   CogIcon,
   MapIcon,
   PuzzleIcon,
+  ColorSwatchIcon,
 } from '@heroicons/react/outline';
 
 import DropdownMenu, { MenuOptions } from '@shared/components/DropdownMenu';
 import Logo from '@shared/components/Logo';
+import { setTheme } from '@shared/theme';
 
 const Header = () => {
   const menuOptions: MenuOptions[] = [
@@ -21,6 +23,21 @@ const Header = () => {
     {
       title: 'Достижения',
       action: () => {},
+    },
+  ];
+
+  const themeOptions: MenuOptions[] = [
+    {
+      title: 'Светлая тема',
+      action: () => setTheme('light'),
+    },
+    {
+      title: 'Тёмная тема',
+      action: () => setTheme('dark'),
+    },
+    {
+      title: 'Системная',
+      action: () => setTheme('system'),
     },
   ];
 
@@ -41,6 +58,7 @@ const Header = () => {
           </Link>
 
           <a
+            target="_blank"
             href="http://46.253.143.61:3000/?orgId=1"
             className="btn btn-ghost btn-sm rounded-btn"
           >
@@ -69,7 +87,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="flex-none mx-2">
+      <div className="flex-2 mx-2">
         <DropdownMenu
           options={menuOptions}
           title={
@@ -79,6 +97,13 @@ const Header = () => {
               </div>
             </div>
           }
+        />
+      </div>
+
+      <div className="flex-none mx-2">
+        <DropdownMenu
+          options={themeOptions}
+          title={<ColorSwatchIcon className="w-8 h-8" />}
         />
       </div>
     </div>

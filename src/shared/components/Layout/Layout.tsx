@@ -19,7 +19,7 @@ const Layout = ({
       </div>
 
       <footer className="mb-6">
-        <div className="text-sm text-center text-gray-600">
+        <div className="text-sm text-center">
           Версия 0.0.1 | NOVA | Россети | Все права защищены © 2021
         </div>
       </footer>
