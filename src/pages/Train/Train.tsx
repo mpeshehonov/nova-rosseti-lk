@@ -1,7 +1,8 @@
-import React from 'react';
-import Iframe from 'react-iframe';
+import React, { useRef } from 'react';
+import IframeResizer from 'iframe-resizer-react';
 
 const Train = () => {
+  const iframeRef = useRef(null);
   return (
     <div className="mx-6 md:mx-0">
       <div className="flex justify-center md:justify-start text-3xl">
@@ -9,13 +10,12 @@ const Train = () => {
       </div>
 
       <div className="mt-4">
-        <Iframe
+        <IframeResizer
+          forwardRef={iframeRef}
+          heightCalculationMethod="lowestElement"
           className="border-none"
-          url="https://digital.protsenko.dev/train/index.html"
-          width="100%"
-          height="900px"
-          display="block"
-          position="relative"
+          src="https://digital.protsenko.dev/train/index.html"
+          style={{ width: '100%', height: '90vh' }}
         />
       </div>
     </div>
